@@ -1,6 +1,6 @@
 {
   "name": "${ appName }",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "dependencies": {
     "requirejs": "~2.1.16",
     "jquery": "~1.11.2",

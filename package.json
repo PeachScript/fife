@@ -1,6 +1,6 @@
 {
   "name": "fife",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "A front end building tool for Abstack Tech",
   "main": "index.js",
   "bin": {
