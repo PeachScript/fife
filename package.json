@@ -3,6 +3,9 @@
   "version": "0.0.1",
   "description": "A front end building tool for Abstack Tech",
   "main": "index.js",
+  "bin": {
+    "fife": "bin/fife"
+  },
   "dependencies": {
     "cheerio": "^0.19.0",
     "colors": "^1.1.0",
