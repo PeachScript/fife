@@ -1,0 +1,109 @@
+// 各类工具类型函数
+/**
+ * transition生成函数
+ * @param  值
+ */
+.transition(@value){
+  -moz-transition: ~"@{value}";
+  -webkit-transition: ~"@{value}";
+  -o-transition: ~"@{value}";
+  -webkit-font-smoothing: subpixel-antialiased;
+  transition: ~"@{value}";
+}
+/**
+ * transform生成函数
+ * @param  类型
+ * @param  值
+ */
+.transform(@type, @value){
+  -ms-transform: ~"@{type}(@{value})";
+  -moz-transform: ~"@{type}(@{value})";
+  -webkit-transform: ~"@{type}(@{value})";
+  -o-transform: ~"@{type}(@{value})";
+  -webkit-font-smoothing: subpixel-antialiased;
+  transform: ~"@{type}(@{value})";
+}
+/**
+ * animation生成函数
+ * @param  值
+ */
+.animation(@value){
+  -moz-animation: @value;
+  -webkit-animation: @value;
+  -o-animation: @value;
+  -ms-animation: @value;
+  animation: @value;
+}
+/**
+ * animation延迟执行函数
+ * @param  毫秒数
+ */
+.animation-delay(@seconds){
+  -moz-animation-delay: @seconds;
+  -webkit-animation-delay: @seconds;
+  -o-animation-delay: @seconds;
+  -ms-animation-delay: @seconds;
+  animation-delay: @seconds;
+}
+/**
+ * opacity生成函数
+ * @param  百分比(min:1, max: 100)
+ */
+.opacity(@percent) when (isnumber(@percent)){
+  opacity: @percent/100;
+  -ms-filter: ~"progid:DXImageTransform.Microsoft.Alpha(opacity=@{percent})";
+  filter: ~"alpha(opacity=@{percent})";
+}
+/**
+ * box shadow生成函数
+ * @param  值
+ * @param  颜色
+ */
+.box-shadow(@style){
+  -webkit-box-shadow: @style;
+  -moz-box-shadow: @style;
+  box-shadow: @style;
+}
+/**
+ * border radius生成函数
+ * @param  圆角像素值
+ */
+.border-radius (@radius: 5px) {
+  -webkit-border-radius: @radius;
+  -moz-border-radius: @radius;
+  border-radius: @radius;
+}
+/**
+ * text shadow生成函数
+ * @param  值
+ */
+.text-shadow(@style){
+  -webkit-text-shadow: @style;
+  -moz-text-shadow: @style;
+  text-shadow: @style;
+}
+/**
+ * display box生成函数
+ */
+.display-box{
+  display: -webkit-box;
+  display: box;
+}
+/**
+ * box flex生成函数
+ * @param  value
+ */
+.box-flex(@value){
+  -webkit-box-flex: @value;
+  box-flex: @value;
+  -webkit-flex: @value;
+  flex: @value;
+}
+/**
+ * CSS3 省略号生成函数
+ */
+.text-ell{
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}

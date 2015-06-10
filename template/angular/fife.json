@@ -1,0 +1,24 @@
+{
+  "server": {
+    "root": "./app"
+  },
+  "livereload": {},
+  "src": {
+    "html": {
+      "main": "/index.html",
+      "paths": ["/index.html", "/views/**/*.html"]
+    },
+    "less": {
+      "main": "/styles/less/${ appName }.less",
+      "paths": ["/styles/less/**/*.less"]
+    },
+    "css": {
+      "main": "/styles/${ appName }.css",
+      "paths": ["/styles/**/*.css"]
+    },
+    "js": {
+      "main": "/scripts/require.config.js",
+      "paths": ["/scripts/**/*.js"]
+    }
+  }
+}
