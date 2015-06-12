@@ -1,10 +1,10 @@
 #!/usr/bin/env node
 
 var commander = require('commander'),
-    generate = require('./generate'),
-    livereload = require('./livereload'),
-    runserver = require('./runserver'),
-    build = require('./build');
+    generate = require('../lib/generate'),
+    livereload = require('../lib/livereload'),
+    runserver = require('../lib/runserver'),
+    build = require('../lib/build');
 
 commander.version('0.1.2');
 
