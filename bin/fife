@@ -6,7 +6,7 @@ var commander = require('commander'),
     runserver = require('../lib/runserver'),
     build = require('../lib/build');
 
-commander.version('0.1.2');
+commander.version('0.2.0');
 
 commander.usage('[command] <args ...>');
 
