@@ -14,13 +14,13 @@
 
 安装到全局
 
-```
+```js
 $ npm install -g fife
 ```
 
 安装到项目中
 
-```
+```js
 $ npm install fife
 ```
 
@@ -28,30 +28,30 @@ $ npm install fife
 
 1. 生成项目
 
-```
-$ fife generate <dir_name>
-```
+  ```js
+  $ fife generate <dir_name>
+  ```
 
 2. 启动服务器，与此同时会启动文件变更实时监听（livereload）
 
-```
-$ fife runserver
-```
+  ```js
+  $ fife runserver
+  ```
 
 3. 启动实时监听
 
-```
-$ fife livereload
-```
-
-*注：此命令仅仅会启动一个实时监听的服务器，无法自动向 html 文件中注入 livereload.js ，所以要保证 livereload 的正常执行，必须手动在html文件中 body 标签的尾部加上如下代码*
-
-```html
-<script>document.write('<script src="http://'
-    + (location.host || 'localhost').split(':')[0]
-    + ':35729/livereload.js?snipver=1"></'
-    + 'script>')</script>
-```
+  ```js
+  $ fife livereload
+  ```
+  
+  *注：此命令仅仅会启动一个实时监听的服务器，无法自动向 html 文件中注入 livereload.js ，所以要保证 livereload 的正常执行，必须手动在html文件中 body 标签的尾部加上如下代码*
+  
+  ```html
+  <script>document.write('<script src="http://'
+      + (location.host || 'localhost').split(':')[0]
+      + ':35729/livereload.js?snipver=1"></'
+      + 'script>')</script>
+  ```
 
 # MIT license
 
