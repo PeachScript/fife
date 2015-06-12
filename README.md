@@ -8,7 +8,7 @@
   2. 快速运行一个前端服务器
   3. 在开发过程中对项目文件做变更监听，实时刷新浏览器（livereload）
   4. 拭目以待……
-    
+
 
 # 安装
 
@@ -26,19 +26,19 @@ $ npm install fife
 
 # 使用方法
 
-生成项目
+1. 生成项目
 
 ```
 $ fife generate <dir_name>
 ```
 
-启动服务器，与此同时会启动文件变更实时监听（livereload）
+2. 启动服务器，与此同时会启动文件变更实时监听（livereload）
 
 ```
 $ fife runserver
 ```
 
-启动实时监听
+3. 启动实时监听
 
 ```
 $ fife livereload
