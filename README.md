@@ -43,14 +43,19 @@ $ npm install fife
   ```js
   $ fife livereload
   ```
-  
+
   *注：此命令仅仅会启动一个实时监听的服务器，无法自动向 html 文件中注入 livereload.js ，所以要保证 livereload 的正常执行，必须手动在html文件中 body 标签的尾部加上如下代码*
-  
+
   ```html
   <script>document.write('<script src="http://'
       + (location.host || 'localhost').split(':')[0]
       + ':35729/livereload.js?snipver=1"></'
       + 'script>')</script>
+  ```
+4. 打包项目（目前包含压缩、合并 javascript 文件，编译、压缩 less 文件，更新相应文件的引用，这三种功能）
+
+  ```js
+  $ fife build
   ```
 
 # MIT license
