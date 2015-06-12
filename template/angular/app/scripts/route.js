@@ -1,11 +1,11 @@
-define(['angular', '${ appName }Controller', '${ appName }Service'], function(){
+define(['angular', '${ appName }Controller', '${ appName }Service', 'ngRoute'], function(){
 
   'use strict';
 
-  return angular.module('${ appName }Route', ['${ appName }Controller', '${ appName }Service'])
+  return angular.module('${ appName }Route', ['${ appName }Controller', '${ appName }Service', 'ngRoute'])
     .config(['$routeProvider', '$locationProvider'
       , function($routeProvider, $locationProvider){
-        $routeProvider.when('/home', {
+        $routeProvider.when('/', {
           templateUrl: '/views/home.html'
         });
 

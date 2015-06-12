@@ -1,9 +1,10 @@
-define(['angular', '${ appName }Route', '${ appName }Directive', '${ appName }Service', 'ngLocale'], function(){
+define(['angular', '${ appName }Route', '${ appName }Directive', '${ appName }Service'
+  , 'ngLocale'], function(){
 
   'use strict';
 
-  return angular.module('${ appName }', ['${ appName }Route', '${ appName }Directive', '${ appName }Service'
-    ,'ngLocale'])
+  return angular.module('${ appName }', ['${ appName }Route', '${ appName }Directive'
+    , '${ appName }Service','ngLocale'])
     .run(function(){
       console.log('App is running now !');
     })

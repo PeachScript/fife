@@ -5,20 +5,21 @@
   "livereload": {},
   "src": {
     "html": {
-      "main": "/index.html",
-      "paths": ["/index.html", "/views/**/*.html"]
+      "main": "index.html",
+      "paths": ["index.html", "views/**/*.html"]
     },
     "less": {
-      "main": "/styles/less/${ appName }.less",
-      "paths": ["/styles/less/**/*.less"]
+      "main": "styles/less/${ appName }.less",
+      "output": "styles/${ appName }.css",
+      "paths": ["styles/less/**/*.less"]
     },
     "css": {
-      "main": "/styles/${ appName }.css",
-      "paths": ["/styles/**/*.css"]
+      "paths": ["styles/**/*.css"]
     },
     "js": {
-      "main": "/scripts/require.config.js",
-      "paths": ["/scripts/**/*.js"]
+      "main": "scripts/require.config.js",
+      "output": "scripts/${ appName }.js",
+      "paths": ["scripts/**/*.js"]
     }
   }
 }

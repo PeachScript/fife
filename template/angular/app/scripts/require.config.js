@@ -6,6 +6,7 @@ requirejs.config({
     // Libraries
     'jQuery': 'bower_components/jquery/dist/jquery.min',
     'angular': 'bower_components/angular/angular',
+    'ngRoute': 'bower_components/angular-route/angular-route',
     'ngLocale': 'bower_components/angular-i18n/angular-locale_zh-cn',
 
     // module, config, router, directive, service, controllers
@@ -19,8 +20,8 @@ requirejs.config({
   shim: {
     'angular': {
       deps: ['jQuery']
-    }
-    'ngLocalstorage': {
+    },
+    'ngRoute': {
       deps: ['angular']
     },
     'ngLocale': {
